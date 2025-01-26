@@ -1,6 +1,7 @@
 // pages/api/radio.js
 export default async function handler(req, res) {
-    const streamUrl = "https://uk16freenew.listen2myradio.com/live.mp3?typeportmount=s1_33828_stream_518870635/";
+    // const streamUrl = "https://uk16freenew.listen2myradio.com/live.mp3?typeportmount=s1_33828_stream_518870635";
+    const streamUrl = "https://unlimited5-us.dps.live/biobiosantiago/aac/icecast.audio";
     const { t } = req.query; // Parámetro para evitar el cacheo
 
     res.setHeader('Cache-Control', 's-maxage=1, stale-while-revalidate');
