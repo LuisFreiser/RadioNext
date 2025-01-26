@@ -22,7 +22,7 @@ export default function Page() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const maxRetries = 3;
   const audioRef = useRef(null);
-  const [audioSource, setAudioSource] = useState(`/api/radio?t=${Date.now()}`);
+  const [audioSource, setAudioSource] = useState(`/api/radio`); //Modificado
   const [hlsInstance, setHlsInstance] = useState(null);
 
   // Agregar estos estados para el slider
@@ -93,7 +93,7 @@ export default function Page() {
 
       if (audioRef.current.paused) {
         const audio = audioRef.current;
-        const streamUrl = `/api/radio?t=${Date.now()}`;
+        const streamUrl = `/api/radio`; //Modificado
 
         audio.removeEventListener("canplay", () => handleCanPlay(audio));
         audio.src = streamUrl;
