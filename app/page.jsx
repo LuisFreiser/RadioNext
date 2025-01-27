@@ -796,9 +796,6 @@ export default function Page() {
             onPlaying={handlePlay}
             onWaiting={handleLoading}
             onPause={() => setIsPlaying(false)}
-            onEnded={() => {
-              setIsPlaying(false);
-            }}
           />
 
           {error && (
