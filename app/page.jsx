@@ -523,7 +523,7 @@ export default function Page() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 10000);
+    }, 3000);
     return () => clearInterval(timer);
   }, [images.length]);
 
