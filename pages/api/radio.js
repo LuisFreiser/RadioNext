@@ -1,5 +1,5 @@
 // export default async function handler(req, res) {
-//     // const streamUrl = "http://82.145.41.8:16105/stream";
+// const streamUrl = "http://82.145.41.8:16105/stream";
 //     const streamUrl = "http://37.157.242.105:11421/";
 //     const { t } = req.query; // Parámetro para evitar el cacheo
 
@@ -27,8 +27,8 @@
 // }
 
 export default async function handler(req, res) {
-    const streamUrl = "http://37.157.242.105:11421/";
-    //const streamUrl = "http://82.145.41.8:16105/stream";
+    // const streamUrl = "http://37.157.242.105:11421/";
+    const streamUrl = "http://82.145.41.50:26531/stream";
 
     try {
         res.setHeader('Content-Type', 'audio/mpeg');
@@ -58,3 +58,4 @@ export default async function handler(req, res) {
         res.status(500).send(`Error streaming audio: ${error.message}`);
     }
 }
+
