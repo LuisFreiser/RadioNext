@@ -1,6 +1,7 @@
 // pages/api/radio.js
 export default async function handler(req, res) {
-    const streamUrl = "http://82.145.41.8:16105/stream";
+    // const streamUrl = "http://82.145.41.8:16105/stream";
+    const streamUrl = "http://37.157.242.105:11421/";
     const { t } = req.query; // Parámetro para evitar el cacheo
 
     res.setHeader('Cache-Control', 's-maxage=1, stale-while-revalidate');
